@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: rgb(166, 172, 166);
+            margin: 0px;
+        }
+        header{
+            background-color: rgb(243, 243, 241);
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: rgb(0, 0, 0);
+            padding: 3px;
+            box-shadow: 3px 3px 3px rgb(126, 124, 124); /* Serve pra colocar sombras */
+        }
+        nav > a{
+            text-decoration: none; /* tira a linha debaixo das opcoes do menu */
+            color: rgb(187, 154, 6);
+            font-weight: bold; /* deixa em negrito */
+            margin-right: 30px;
+            ;
+        }
+
+        nav > a:hover{
+            text-decoration: underline; /* Toda vez que passar o mouse em cima do menu fica interativo */
+        }
+
+        main{
+            background-color: blanchedalmond;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px; /* Deixa a caixa de texto principal arredondada */
+            box-shadow: 3px 3px 3px rgb(110, 109, 109) ;
+        }
+        article{
+            background-color: rgb(221, 238, 144);
+            padding: 5px;
+        }
+
+        article > aside{
+            background-color: rgb(122, 94, 1);
+        }
+
+        footer{
+            background-color: black;
+            color: rgb(252, 252, 252);
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        footer > p{
+            margin: 2px;
+        }
+        div#bola{
+            height: 300px;
+            width: 300px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%; /* Conf q deixa redondo */
+        }
+    </style>
+</head>
+<body>
+    <header> <!-- cabeçalho -->
+        <h1>Meu site</h1>
+        <nav><!--  Menu ou navegaçao -->
+            <a href="#" >teste</a>
+            <a href="#">teste</a>
+            <a href="#">teste</a>
+            <a href="#">teste</a>
+            <a href="#">teste</a>
+        </nav>
+    </header>
+    <main> <!-- CONTEÚDO PRINCIPAL -->
+        <section id="assuntos"> <!-- Sessoes -->
+            <p>Esportes Política e Tecnologia</p>
+        </section>
+        <section id="notícias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non dolor atque debitis itaque iste hic? Necessitatibus, hic, molestiae in alias architecto voluptas adipisci quis ea aliquam eveniet eos reiciendis.</p>
+                <aside>
+                    <p>Artigo escrito por Jose da Silva</p>
+                </aside>
+                <article>
+
+                </article>
+            </article>
+            
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Curso Em Video</p>
+    </footer>
+    <div id="bola"></div> <!-- É aquela bola que tem na tela -->
+</body>
+</html>
