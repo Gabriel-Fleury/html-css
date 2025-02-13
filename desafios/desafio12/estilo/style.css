@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+*{ /* o asteristico serve pra dar uma configuraçao geral */
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100%;
+    background-color: darkgray;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+header > h1{
+    padding-top: 50px; /* distancia de cima pro meio */
+    /*text-transform: uppercase;  deixa o H1 tudo em letra maiúscula */
+    font-variant: small-caps; /* tmb deixa em maiusculas */
+}
+
+header > p{
+    padding-bottom: 50px; /* distancia do meio pra baixo */
+}
+
+header a, footer a{
+    color: white;
+    text-decoration: none;/*  tira sublinhado */
+    font-weight: bold; /* deixa negrito */
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline; /* passando mouse em cima cria o sublinhado */
+
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em; /* espaçamento entre as frases */
+    padding-left: 30px; /* afasta da borda */
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(70, 70, 70);
+    color: white;
+
+}
+section.imagem > p{
+    background-color:  rgba(0, 0, 0, 0.253);
+    width: 400px;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
