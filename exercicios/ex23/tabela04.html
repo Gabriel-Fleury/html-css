@@ -36,15 +36,20 @@
 
         <thead>
             <tr>
-                <th>Grupos </th>
-                <th>Nomes</th>
-                <th colspan="3">Filmes</th>
+                <th scope="col">Grupos </th> <!-- ESCOPO DE COLUNAS -->
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th><!--  ESCOPO DE COLUNA COM COLSPAN -->
             </tr>
         </thead>
-
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="4">Total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>
         <tbody>
             <tr>
-                <th rowspan="3">Mulheres</th>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
                 <td>Ana Maria</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -66,7 +71,7 @@
             </tr>
 
             <tr>
-                <th rowspan="3">Homens</th>
+                <th rowspan="3" scope="rowgroup">Homens</th> <!-- ESCOPO DE LINHA USANDO ROWSPAn -->
                 <td>Bruno Mendonça</td>
                 <td>Intocaveis</td>
                 <td>Amnésia</td>
