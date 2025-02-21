@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Meu Primeiuro Formulario</h1>
+    <form action="cadastro.php" autocomplete="off"> <!-- autocomplete tira as opçoes de nomes abaixo -->
+
+        <p><label for="inome">Nome:</label>  <!-- dentro do for sempre colocar o id SEMPRE USAR LABEL-->
+            <input type="text" name="Nome" id="inome"></p> <!-- esses dois faz as caixas -->
+
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+
+        <p><input type="submit" value="Enviar"></p> <!-- esse faz o botao de enviar -->
+    </form>
+</body>
+</html>
