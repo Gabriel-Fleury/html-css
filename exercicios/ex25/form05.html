@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHEKbOX</title>
+
+                                     <!-- DIFERENÇA = o radio so pode marcar uma opçao e tem que ter o mesmo name="" -->
+    
+</head>
+<body>
+    <h1>Exemplo de Forms</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas"> <label for="ismax">Masculino</label> <br><!--  Esse input é pra marcaçao de sexos -->
+            <input type="radio" name="sexo" id="isxfem"> <label for="isxfem">Mulher</label>
+        </fieldset>
+        <fieldset> <!-- faz aquela linha ao redor -->
+            <legend>Esportes Favoritos</legend>
+            <label for="iesfut">
+                <input type="checkbox" name="esfut" id="iesfut"> Futebol <br>
+            </label>
+            <label for="iesbas"><input type="checkbox" name="esbas" id="iesbas"> basquete <br></label>
+            <label for="iesnat"><input type="checkbox" name="esnat" id="iesnat"> Nataçao <br></label>
+            <label for="iesten"><input type="checkbox" name="esten" id="iesten"> Tenis<br></label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>

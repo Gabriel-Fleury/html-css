@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form06</title>
+</head>
+<body>
+    <h1>Exemplo de Forms</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor"> <!-- input de seletor de cores -->
+        </p>
+        <p>
+            <label for="inivel"> Nível de Satisfaçao</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5"  value="2"> <!-- value é da onde vai começar -->
+        </p>
+
+        <p>
+            <label for="ifoto">Foto do Perfil</label>
+            <input type="file" name="foto" id="ifoto"> <!-- input pra escolher fotos, SEMPRE QUE USAR ESSE METODO, USAR O METHOD POST -->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+</body>
+</html>
